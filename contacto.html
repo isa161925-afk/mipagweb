@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Mi Página Personal</title>
+    <link rel="stylesheet" href="estilos3.css">
+</head>
+<body>
+    <header class="header-principal">
+        <h1>Mi Página Personal</h1>
+        <p>Ponte en comunicación conmigo 💻</p>
+        <div class="contenedor-marquee">
+            <span class="texto-movimiento">⭐ Escríbeme un mensaje ⭐ Respuesta rápida ⭐</span>
+        </div>
+    </header>
+
+    <nav class="barra-navegacion">
+        <div class="menu-links">
+            <a href="index.html" class="nav-btn">Inicio</a>
+            <a href="sobremi.html" class="nav-btn">Sobre mí</a>
+            <a href="hobbies.html" class="nav-btn">Mis hobbies</a>
+            <a href="contacto.html" class="nav-btn activo">Contacto</a>
+        </div>
+    </nav>
+
+    <main class="contenedor-principal">
+        <div class="tarjeta-contacto">
+            <h2>¡Ponte en contacto! 📥</h2>
+            <p>Escríbeme un mensaje y te responderé lo más pronto posible.</p>
+            
+            <form onsubmit="event.preventDefault(); alert('¡Mensaje enviado con éxito!'); event.target.reset();">
+                <div class="campo-form">
+                    <label>Nombre:</label>
+                    <input type="text" placeholder="Tu nombre" required>
+                </div>
+                <div class="campo-form">
+                    <label>Correo electrónico:</label>
+                    <input type="email" placeholder="tu@correo.com" required>
+                </div>
+                <div class="campo-form">
+                    <label>Mensaje:</label>
+                    <textarea rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                </div>
+                <button type="submit" class="btn-enviar">Enviar Mensaje</button>
+            </form>
+        </div>
+    </main>
+
+    <footer class="pie-pagina">
+        <p>Mi Página Personal 2026</p>
+    </footer>
+</body>
+</html>

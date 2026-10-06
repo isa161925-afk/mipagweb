@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+}
+
+.tarjeta-grande {
+    background-color: rgb(166, 147, 147);
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+.header-principal {
+    background-color: #3b82f6;
+    color: white;
+    text-align: center;
+    padding: 25px 10px;
+}
+
+.header-principal h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+.header-principal p {
+    margin: 5px 0 10px 0;
+    font-size: 16px;
+}
+
+
+.contenedor-marquee {
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: #2563eb;
+    padding: 6px 0;
+    margin-top: 10px;
+}
+
+.texto-movimiento {
+    display: inline-block;
+    animation: desplazar 15s linear infinite;
+    font-size: 14px;
+    font-weight: bold;
+    color: #e0e7ff;
+}
+
+@keyframes desplazar {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}.barra-navegacion {
+    background-color: #1e293b;
+    padding: 10px;
+    text-align: center;
+}
+
+.menu-links {
+    display: inline-flex;
+    gap: 10px;
+}
+.nav-btn:hover {
+    background-color: #334155;
+    color: white;
+}
+
+.nav-btn.activo {
+    background-color: #334155;
+    color: white;
+    font-weight: bold;
+}
+
+
+.grid-sobremi {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+}
+
+.columna-imagen {
+    flex: 1;
+    min-width: 250px;
+    text-align: center;
+}
+
+.caja-foto img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.columna-texto {
+    flex: 1.5;
+    min-width: 280px;
+}
+
+.columna-texto h2, .columna-texto h3 {
+    color: #1f2937;
+}
+
+.columna-texto p, .columna-texto li {
+    color: #4b5563;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.columna-texto ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+.columna-texto li {
+    margin-bottom: 10px;
+}
+.pie-pagina {
+    text-align: center;
+    padding: 15px;
+    color: #6b7280;
+    font-size: 13px;
+    background-color: white;
+    border-top: 1px solid #e2e8f0;
+    margin-top: 40px;
+}

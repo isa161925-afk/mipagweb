@@ -1,0 +1,134 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+}
+
+.header-principal {
+    background-color: #3b82f6;
+    color: white;
+    text-align: center;
+    padding: 25px 10px;
+}
+
+.header-principal h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+.header-principal p {
+    margin: 5px 0 10px 0;
+    font-size: 16px;
+}
+
+
+.contenedor-marquee {
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: #2563eb;
+    padding: 6px 0;
+    margin-top: 10px;
+}
+
+.texto-movimiento {
+    display: inline-block;
+    animation: desplazar 15s linear infinite;
+    font-size: 14px;
+    font-weight: bold;
+    color: #e0e7ff;
+}
+
+@keyframes desplazar {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+/* Barra de Navegación */
+.barra-navegacion {
+    background-color: #1e293b;
+    padding: 10px;
+    text-align: center;
+}
+
+.menu-links {
+    display: inline-flex;
+    gap: 10px;
+}
+
+.nav-btn {
+    background-color: transparent;
+    color: #cbd5e1;
+    border: none;
+    padding: 8px 16px;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.nav-btn:hover {
+    background-color: #334155;
+    color: white;
+}
+
+.nav-btn.activo {
+    background-color: #334155;
+    color: white;
+    font-weight: bold;
+}
+.tarjeta-hobbies {
+    background-color: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+.subtitulo {
+    color: #6b7280;
+    margin-bottom: 25px;
+}
+
+.grid-hobbies {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.mini-tarjeta {
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: 0.2s;
+}
+
+.mini-tarjeta:hover {
+    background-color: #f1f5f9;
+    transform: translateY(-3px);
+}
+
+.mini-tarjeta .icono {
+    font-size: 35px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.mini-tarjeta h3 {
+    font-size: 14px;
+    color: #334155;
+    margin: 0;
+}
+.pie-pagina {
+    text-align: center;
+    padding: 15px;
+    color: #6b7280;
+    font-size: 13px;
+    background-color: white;
+    border-top: 1px solid #e2e8f0;
+    margin-top: 40px;
+}
